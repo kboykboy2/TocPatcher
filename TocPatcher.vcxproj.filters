@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{05ec1212-642f-42a4-8e3a-0539bf410308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{75c9beaf-0904-4f24-81b5-52552d32402f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Serialization">
+      <UniqueIdentifier>{cea62fe2-ef87-4ff1-834b-6571a07a50d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Serialization\Disk">
+      <UniqueIdentifier>{9106ab2e-b3f7-40a9-a8b5-62ae6944ec92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Serialization\Memory">
+      <UniqueIdentifier>{43b87d9b-5d70-473e-a6a2-36bae098ede5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Serialization\Stream">
+      <UniqueIdentifier>{e23ba15f-858e-4ad7-9b72-d236dd93a017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Error">
+      <UniqueIdentifier>{946b0432-4ebf-4a87-a6bd-a188e1172823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Logging">
+      <UniqueIdentifier>{dcb58635-321c-4b4b-beca-26f7be350a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\System">
+      <UniqueIdentifier>{29de2233-3c64-47ef-a1c7-97fd7c18c26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Unreal">
+      <UniqueIdentifier>{08bb261e-5054-4fd4-aa2e-153bab1fd080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{9e9d6a0d-526f-4134-b733-f09161c0bb69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\rijndael">
+      <UniqueIdentifier>{5992daec-e548-4914-8b74-dbb43ec001fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\Serialization\IoStream.cpp">
+      <Filter>Source\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Serialization\Serializer.cpp">
+      <Filter>Source\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Serialization\Disk\DiskWriter.cpp">
+      <Filter>Source\Core\Serialization\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Serialization\Disk\DiskReader.cpp">
+      <Filter>Source\Core\Serialization\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Serialization\Memory\MemReader.cpp">
+      <Filter>Source\Core\Serialization\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Serialization\Memory\MemWriter.cpp">
+      <Filter>Source\Core\Serialization\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rijndael\rijndael.c">
+      <Filter>Source\Unreal</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Serialization\Stream\StreamWriter.cpp">
+      <Filter>Source\Core\Serialization\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Serialization\Stream\StreamReader.cpp">
+      <Filter>Source\Core\Serialization\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Error\Error.cpp">
+      <Filter>Source\Core\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Logging\Logging.cpp">
+      <Filter>Source\Core\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\System\System.cpp">
+      <Filter>Source\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Patcher.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Core\Types.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Serialization\IoStream.h">
+      <Filter>Source\Core\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Serialization\Serializer.h">
+      <Filter>Source\Core\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Error\Error.h">
+      <Filter>Source\Core\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Logging\Logging.h">
+      <Filter>Source\Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\System\System.h">
+      <Filter>Source\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Unreal\IoStore.h">
+      <Filter>Source\Unreal</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rijndael\rijndael.h">
+      <Filter>lib\rijndael</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
