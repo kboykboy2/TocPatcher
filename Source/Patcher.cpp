@@ -59,7 +59,8 @@ void CheckArgCount(int count, std::string MasterPath)
 
 		std::cout << "Master Toc Info:" << '\n';
 		std::cout << "CompressionType       : " << (char*)&toc_master.CompressionMethods[0] << '\n';
-		std::cout << "Compression Block Size: " << *(short*)&(&toc_master.Header.CompBlockSize)[2] * 64 << '\n';
+		std::cout << "Compression Block Size (bytes): " << toc_master.Header.CompBlockSize << '\n';
+		std::cout << "Compression Block Size (kb)   : " << (float)toc_master.Header.CompBlockSize / 1024.0 << '\n';
 
 		std::cout << "\nMake sure the target toc is using these same settings" << '\n';
 
@@ -91,8 +92,10 @@ void CheckTargetSettings(FIoStoreTocResource &toc_master, FIoStoreTocResource &t
 	}
 	if (toc_target.Header.CompBlockSize != toc_master.Header.CompBlockSize)
 	{
-		std::cout << "Target toc has incorrect compression block size, it is: " << *(short*)&(&toc_target.Header.CompBlockSize)[2] * 64 << '\n';
-		std::cout << "It should be the same as the master, which is: " << *(short*)&(&toc_master.Header.CompBlockSize)[2] * 64 << '\n';
+		std::cout << "Target toc has incorrect compression block size, it is (bytes): " << (float)toc_target.Header.CompBlockSize / 1024.0 << '\n';
+		std::cout << "                                                       (kb)   : " << toc_target.Header.CompBlockSize << '\n';
+		std::cout << "It should be the same as the master, which is (bytes): " << toc_master.Header.CompBlockSize << '\n';
+		std::cout << "                                              (kb)   : " << (float)toc_master.Header.CompBlockSize / 1024.0 << '\n';
 		fail = true;
 	}
 
