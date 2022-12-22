@@ -6,6 +6,14 @@
  Raise an issue if you run into any bugs glitches or other issues like that, Cause you will.
  this is not a user friendly tool, and is meant to be used by experianced modders.
 
+Update:
+it appears that the Chunk Index used to create the mod toc (pakchunk0,pakchunk1 etc) can effect how the mod functions
+depending on the chunk index the mod may crash, have an infinite load, or work,
+however i have also gotten reports that a mod could work for awhile, and then have an infinite load later.
+
+i will do my best to fix this issue, however the method used for this patcher is non ideal, from a first glance it worked great for me,
+and had no issue in the tests i did, but apparently i got lucky, again this may be fixable, but its possible it is not.
+
 # Usage
  copy a .utoc from the game and replace "Master.utoc" with it. make sure the toc is larger than the target toc.
 
